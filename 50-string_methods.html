@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript string methods</title>
+</head>
+<body>
+    <script>
+        var scr="this is a website";
+        console.log(scr);
+        //first occurence of a substring 
+        var position=scr.indexOf("is");
+        console.log(position);
+
+        //last occurence of a substring 
+        position=scr.lastIndexOf("is");
+        console.log(position);
+
+        //substring from a string
+        var substr=scr.slice(1,6);
+        console.log(substr);
+        var substr=scr.substring(1,6);
+        console.log(substr);
+        var substr=scr.substr(1,6);
+        console.log(substr);
+        
+
+        var replace=scr.replace("website","string");
+        console.log(replace);
+
+        console.log(scr.toUpperCase());
+        console.log(scr.toLowerCase());
+
+        var newString=scr.concat(" new string");
+        console.log(newString);
+
+        var stringWithWhiteSpaces="   this   contains   whitespaces    ";
+        console.log(stringWithWhiteSpaces.trim());
+        
+        var char2=scr.charAt(2);
+        console.log(char2);
+        var char2=scr.charCodeAt(2);
+        console.log(char2);
+        console.log(scr[2]);
+    </script>
+</body>
+</html>

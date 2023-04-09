@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS box model</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: violet;
+        }
+        .container{
+            background-color: rgb(231, 230, 241);
+            border: 3px solid rgb(64, 6, 119);
+
+            /* we can set padding/margin like this */
+            margin: 34px;
+            padding-left: 45px;
+            padding-right: 34px;
+            padding-bottom: 54px;
+            padding-top: 53px;
+
+            padding: 33px 53px 43px 54px; /*padding/margin: top right bottom left; */
+
+            padding: 32px 43px;/* padding: top/bottom left/right; */
+
+            border-radius: 13px;
+            width: 233px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>this is heading</h3>
+        <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, necessitatibus deleniti voluptates a velit doloremque. Minima possimus magni tempora nostrum a illum id. Unde, laudantium quos in facere aperiam porro?</p>
+    </div>
+    <div class="container">
+        <h3>this is heading</h3>
+        <p id="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, necessitatibus deleniti voluptates a velit doloremque. Minima possimus magni tempora nostrum a illum id. Unde, laudantium quos in facere aperiam porro?</p>
+    </div>
+    <div class="container">
+        <h3>this is heading</h3>
+        <p id="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, necessitatibus deleniti voluptates a velit doloremque. Minima possimus magni tempora nostrum a illum id. Unde, laudantium quos in facere aperiam porro?</p>
+    </div>
+</body>
+</html>

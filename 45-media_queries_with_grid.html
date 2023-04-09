@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media queries with grid</title>
+    <style>
+        .container{
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas: 
+            'nav nav nav nav'
+            'section section section aside'
+            'footer footer footer footer';
+        }
+        @media only screen and (max-width:300px) {
+            body{
+                background-color: red;
+            }
+            aside{
+                display: none;
+            }
+            span{
+                display: block;
+                text-align: center;
+            }
+        }
+        @media only screen and (min-width:300px) and (max-width:500px){
+            body{
+                background-color: blue;
+            }
+            .container{
+            grid-template-areas: 
+            'nav nav nav nav'
+            'section section section section'
+            'aside aside aside aside'
+            'footer footer footer footer';
+        }
+        }
+        @media only screen and (min-width:500px) and (max-width:800px){
+            body{
+                background-color: green;
+            }
+        }
+        @media only screen and (min-width:800px) {
+            body{
+                background-color: yellow;
+            }
+        }
+        .bdr{
+            background-color: wheat;
+            border: 2px solid white;
+            padding: 20px;
+        }
+        nav{
+            grid-area: nav;
+        }
+        section{
+            grid-area: section;
+        }
+        aside{
+            grid-area: aside;
+        }
+        footer{
+            grid-area: footer;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="bdr">
+            <span>Home</span>
+            <span>About</span>
+            <span>Services</span>
+            <span>contact us</span>
+            </nav>
+            <section class="bdr">
+                <h2>learn css in urdu</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates quisquam odio ab enim quaerat cumque sit corrupti aliquid possimus eligendi, soluta amet pariatur saepe maxime vel quibusdam id a omnis. Ex eum quaerat ullam repellat eligendi eveniet explicabo delectus harum aperiam quod. Blanditiis quas deleniti recusandae officia placeat unde velit! Voluptas illum vitae labore earum ipsa quam perferendis nobis molestiae voluptatum sit, adipisci eum doloremque neque consequuntur. Minus perferendis, neque ut deleniti eveniet repudiandae quasi aliquid pariatur, nemo recusandae architecto fuga et impedit ipsum voluptas iusto quidem iure! Debitis nemo placeat blanditiis tenetur sequi incidunt cumque ipsum omnis aliquam consequatur!</p>
+            </section>
+            <aside class="bdr">
+                more about us
+            </aside>
+            <footer class="bdr">copyright material</footer>
+        </div>
+        
+</body>
+</html>

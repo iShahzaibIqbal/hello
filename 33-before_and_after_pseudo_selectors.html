@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>before and after pseudo selectors</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+
+        .navigation {
+            font-weight: bold;
+            font-size: 20px;
+            display: flex;
+        }
+
+        li {
+            list-style: none;
+            padding: 34px 24px;
+        }
+
+        section {
+            height: 300px;
+            /* border: 2px solid white; */
+            margin: 3px 233px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+        }
+
+        h1 {
+            font-size: 3rem;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        header::before {
+            content: "hi";
+            background-image: url("Screenshot (236).png");            
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.5;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact us</li>
+            </ul>
+        </nav>
+
+    </header>
+    <section>
+        <h1>Welcome to website</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias sapiente, ducimus ut at, reiciendis harum
+            aliquid architecto, numquam excepturi possimus expedita. Inventore vitae libero modi earum, iusto, dolores
+            perferendis odio laborum nesciunt, totam voluptate?</p>
+    </section>
+</body>
+
+</html>

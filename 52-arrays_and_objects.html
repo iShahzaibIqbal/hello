@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays and objects</title>
+</head>
+<body>
+    <script>
+
+        let employee={
+            name:"shahzaib",
+            salalray:44,
+            job:"coding",
+            "job 2":"programming",
+        };
+        console.log(employee);
+        console.log(employee['job 2']);
+
+        let arr=[1,2,3,"name",undefined]
+        console.log(arr);
+
+        let arr2=new Array(14,20,10,"hi",null);
+        console.log(arr2);
+        console.log(arr2.length);
+        arr2=arr2.sort();
+        arr2.push("this is pushed");
+        console.log(arr2);
+    </script>
+</body>
+</html>
